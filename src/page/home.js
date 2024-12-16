@@ -13,6 +13,9 @@ import Business3 from '../assets/images/ReduceOperationalComplexity.png'
 import Business4 from '../assets/images/OptimizeFinancialRecovery.png'
 import Business5 from '../assets/images/EnhanceDealerCollaboration.png'
 import Business6 from '../assets/images/ImproveData-DrivenDecisionMaking.png'
+import custom from '../assets/images/CustomDevelopment.png'
+import custom1 from '../assets/images/End-to-EndSupport.png'
+import deliver from '../assets/images/Deliver.png'
 import Footer from '../common/footer'
 import CustomAccordion from '../common/accordion'
 function Home() {
@@ -268,6 +271,42 @@ function Home() {
 
                     scalability, and customer satisfaction, no matter the vertical.</p>
 
+                <img src={deliver} className='mt-12' />
+
+            </div>
+
+            <div className='py-8'>
+                <h1 className='text-3xl Brockmann text-white text-center'>Custom Solutions Tailored for You</h1>
+                <p className='text-[#95AAAD] w-2/3 mx-auto text-base text-center Gilroy '>We understand that every business is unique. That’s why we offer:</p>
+                <div className='grid grid-cols-12 gap-4 text-white px-12 py-8'>
+                    <div className='col-span-6 h-full'>
+                        <div className='border border-[#104649] p-8 rounded-lg h-full'>
+                            <img src={custom} className='py-4' />
+                            <h1 className='Brockmann text-xl'>Custom Development</h1>
+                            <p className='text-[#95AAAD] Gilroy py-4 pr-8'>Tailor-made applications to suit your specific needs.</p>
+                        </div>
+                    </div>
+                    <div className='col-span-6 h-full'>
+                        <div className='border border-[#104649] p-8 rounded-lg h-full'>
+                            <img src={custom1} className='py-4' />
+                            <h1 className='Brockmann text-xl'>End-to-End Support</h1>
+                            <p className='text-[#95AAAD] Gilroy py-4 pr-8'>We've got you covered from onboarding to ongoing maintenance.</p>
+
+                        </div>
+                    </div>
+                </div>
+
+                <p className='text-[#95AAAD] w-2/3 mx-auto text-base text-center Gilroy '>Partner with us to experience solutions that adapt to your industry and business goals.</p>
+            </div>
+
+            <div className='py-8'>
+                <div className='flex bg-[#04292B] justify-center text-white p-12 mx-8'>
+                    <div className='w-[50%]'>
+                        <h1 className='Gilroy text-3xl text-[#95AAAD]'><span className='text-white'> Let me know </span>  if you'd <br /> like further refinements!</h1>
+                    </div>
+                    <p className='self-center Gilroy text-[#95AAAD] w-1/2 text-right'>
+                        <button className="bg-[#8BC542] Gilroy uppercase py-4 px-6 rounded-md text-white font-medium">Know More</button></p>
+                </div>
             </div>
 
 
