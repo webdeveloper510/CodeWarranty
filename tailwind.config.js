@@ -3,7 +3,7 @@ module.exports = {
   theme: {
     extend: {
       width: {
-        large: "80%",
+        large: "1200px",
         1366: "1095px",
         tablet: "880px",
       },
