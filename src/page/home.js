@@ -19,6 +19,7 @@ import custom1 from '../assets/images/End-to-EndSupport.png'
 import deliver from '../assets/images/Deliver.png'
 import Footer from '../common/footer'
 import CustomAccordion from '../common/accordion'
+import Contact from '../common/contact'
 function Home() {
 
     const accordionItems = [
@@ -416,7 +417,9 @@ function Home() {
 
                 </div>
             </div>
-
+            <div className='py-8 w-large mx-auto'>
+                <Contact />
+            </div>
 
             <div className='w-large mx-auto'>
                 <div className='flex bg-[#04292B] justify-center text-white p-12 mx-8'>
