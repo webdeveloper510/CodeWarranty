@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.Brockmann {
+    font-family: 'Brockmann', sans-serif;
+
+}
+.Gilroy {
+    font-family: 'Gilroy-Medium', sans-serif;
+ } 
