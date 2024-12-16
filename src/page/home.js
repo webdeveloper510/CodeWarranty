@@ -2,6 +2,7 @@ import React from 'react'
 import Header from '../common/header'
 import Banner from '../assets/images/Group12.png'
 import Mask from '../assets/images/Warranty.svg'
+import Mask1 from '../assets/images/Vector.png'
 import lifecycle from '../assets/images/CompleteLifecycleManagement.png'
 import Dealer from '../assets/images/DealerClaimsManagement.png'
 import Dealer1 from '../assets/images/ManufacturerClaimsProcessing.png'
@@ -306,6 +307,74 @@ function Home() {
                     </div>
                     <p className='self-center Gilroy text-[#95AAAD] w-1/2 text-right'>
                         <button className="bg-[#8BC542] Gilroy uppercase py-4 px-6 rounded-md text-white font-medium">Know More</button></p>
+                </div>
+            </div>
+
+            <div className='py-8'>
+                <h1 className='text-[#95AAAD] Brockmann text-3xl text-center'>Explore the  <span className='text-[#00FFFC]'> Capabilities </span></h1>
+                <p className='text-[#95AAAD] text-center Gilroy py-6'>Discover the key features to automate the warranty management process</p>
+
+
+                <div className='grid grid-cols-2 gap-4 px-8'>
+                    <div className='col-span-1 text-white'>
+                        <h1 className='Brockmann text-xl'>Multiple Claim Types</h1>
+                        <p className='text-[#95AAAD] text-lg Gilroy py-4 pr-8'>The platform supports different types of claims such as:</p>
+                        <h1 className='flex Gilroy '> <img src={Mask} className='pr-2 self-start' />Warranty Claims</h1>
+                        <p className='text-[#95AAAD] Gilroy pb-3'>Handle requests for repair or replacement under valid warranty terms.</p>
+                        <h1 className='flex Gilroy'> <img src={Mask} className='pr-2' /> Bulk Claims</h1>
+                        <p className='text-[#95AAAD] Gilroy pb-3'>Allows multiple claims to be uploaded and processed simultaneously.</p>
+                        <h1 className='flex Gilroy'> <img src={Mask} className='pr-2 self-start' /> Custom Claims Management</h1>
+                        <p className='text-[#95AAAD] Gilroy'>Tailors claim processes based on product categories or dealer requirements.</p>
+                        <p className='text-white Gilroy pt-5'>Impact</p>
+                        <div className='border-l border-white pl-4 mt-3'>
+                            <p className='text-[#95AAAD] Gilroy py-3 flex'><img src={Mask1} className='pr-2 self-center' /> Ensures flexibility to manage claims across a variety of products and use cases.</p>
+                            <p className='text-[#95AAAD] Gilroy pb-3 flex'><img src={Mask1} className='pr-2 self-center' /> Bulk uploads improve efficiency for high-volume operations.</p>
+                            <p className='text-[#95AAAD] Gilroy pb-3 flex'><img src={Mask1} className='pr-2 self-center' /> Provides transparency to dealers and customers about the claim status.</p>
+                        </div>
+                    </div>
+
+                    <div>
+                        <img src={Banner} className='px-6' />
+                    </div>
+                    <div className='mt-3'>
+                        <img src={Banner} className='px-6' />
+                    </div>
+                    <div className='col-span-1 text-white mt-3'>
+                        <h1 className='Brockmann text-xl'>Advanced Pricing Features</h1>
+                        <p className='text-[#95AAAD] text-lg Gilroy py-4 pr-8'>The system supports managing dealer-specific price books with different pricing models, including:</p>
+                        <h1 className='flex Gilroy '> <img src={Mask} className='pr-2 self-start' />Regular Pricing</h1>
+                        <p className='text-[#95AAAD] Gilroy pb-3'>Fixed pricing for standard sales.</p>
+                        <h1 className='flex Gilroy'> <img src={Mask} className='pr-2' />Flat Pricing</h1>
+                        <p className='text-[#95AAAD] Gilroy pb-3'>Uniform pricing for specific categories or ranges.</p>
+                        <h1 className='flex Gilroy'> <img src={Mask} className='pr-2 self-start' /> Quantity-Based Pricing</h1>
+                        <p className='text-[#95AAAD] Gilroy'>Discounted rates for bulk purchases.</p>
+                        <p className='text-white Gilroy pt-5'>Impact</p>
+                        <div className='border-l border-white pl-4 mt-3'>
+                            <p className='text-[#95AAAD] Gilroy py-3 flex'><img src={Mask1} className='pr-2 self-center' /> Simplifies the creation of price books tailored to individual dealers or markets.</p>
+                            <p className='text-[#95AAAD] Gilroy pb-3 flex'><img src={Mask1} className='pr-2 self-center' /> Reduces manual errors with automated uploads and edits.</p>
+                            <p className='text-[#95AAAD] Gilroy pb-3 flex'><img src={Mask1} className='pr-2 self-center' /> Drives sales through strategic pricing for large orders.</p>
+                        </div>
+                    </div>
+                    <div className='col-span-1 text-white mt-3'>
+                        <h1 className='Brockmann text-xl'>Real-Time Claim Tracking</h1>
+                        <p className='text-[#95AAAD] text-lg Gilroy py-4 pr-8'>The platform supports different types of claims such as:</p>
+                        <h1 className='flex Gilroy '> <img src={Mask} className='pr-2 self-start' />Warranty Claims</h1>
+                        <p className='text-[#95AAAD] Gilroy pb-3'>Handle requests for repair or replacement under valid warranty terms.</p>
+                        <h1 className='flex Gilroy'> <img src={Mask} className='pr-2' /> Bulk Claims</h1>
+                        <p className='text-[#95AAAD] Gilroy pb-3'>Allows multiple claims to be uploaded and processed simultaneously.</p>
+                        <h1 className='flex Gilroy'> <img src={Mask} className='pr-2 self-start' /> Custom Claims Management</h1>
+                        <p className='text-[#95AAAD] Gilroy'>Tailors claim processes based on product categories or dealer requirements.</p>
+                        <p className='text-white Gilroy pt-5'>Impact</p>
+                        <div className='border-l border-white pl-4 mt-3'>
+                            <p className='text-[#95AAAD] Gilroy py-3 flex'><img src={Mask1} className='pr-2 self-center' /> Ensures flexibility to manage claims across a variety of products and use cases.</p>
+                            <p className='text-[#95AAAD] Gilroy pb-3 flex'><img src={Mask1} className='pr-2 self-center' /> Bulk uploads improve efficiency for high-volume operations.</p>
+                            <p className='text-[#95AAAD] Gilroy pb-3 flex'><img src={Mask1} className='pr-2 self-center' /> Provides transparency to dealers and customers about the claim status.</p>
+                        </div>
+                    </div>
+                    <div className='mt-3'>
+                        <img src={Banner} className='px-6' />
+                    </div>
+
                 </div>
             </div>
 
