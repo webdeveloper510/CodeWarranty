@@ -12,7 +12,7 @@ module.exports = {
         "headerBackground1": "url('/src/assets/images/banner1.png')",
       },
       backgroundClip: {
-        text: "text", // Add this line
+        text: "text",
       },
       dropShadow: {
         "3xl": "0 4px 84px rgba(0, 0, 0, 0.25)",

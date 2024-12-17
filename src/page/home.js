@@ -87,7 +87,7 @@ function Home() {
                         <p className='text-white text-xl text-center py-5 Gilroy'>Effortless Warranty Management Tailored for Growth</p>
                         <div className='grid grid-cols-12 gap-3'>
                             <div className='col-span-4 border-r pr-3'>
-                                <p className='text-right text-lg leading-1 Gilroy text-white'>Empowered by InsureTech and Built for Compliance</p>
+                                <p className='text-right text-lg pl-8 leading-1 Gilroy text-white'>Empowered by InsureTech and Built for Compliance</p>
                             </div>
                             <div className='col-span-8 flex self-center Gilroy'>
                                 <p className='text-[#95AAAD]'>Optimize your warranty operations with our smart and scalable software, designed to enhance efficiency, reduce costs, and deliver exceptional customer experiences.</p>
@@ -139,7 +139,33 @@ function Home() {
             <div className='py-8 text-center w-large mx-auto'>
                 <h1 className='text-white text-2xl Brockmann'>Complete Lifecycle Management</h1>
                 <p className='text-[#95AAAD] Gilroy text-base'>Our platform brings together every stage of the warranty process to maximize efficiency and deliver value:</p>
-                <img src={lifecycle} className='mx-auto px-16 py-8' alt="mask" />
+                <div className='relative mt-6'>
+                    <img src={lifecycle} className='mx-auto px-16 py-8' alt="mask" />
+                    <div className='absolute top-5 left-[40%] '>
+                        <p className='text-[#95AAAD] Gilroy text-base'>Simplify product setup <br /> with, registrations, and <br /> service plans</p>
+                    </div>
+                    <div className='absolute top-[19%] left-[10%] '>
+                        <p className='text-[#95AAAD] Gilroy text-base text-right'>Foster deeper connections <br /> and enhance trust with <br /> customers and partners.</p>
+                    </div>
+                    <div className='absolute top-[18%] right-[12%] '>
+                        <p className='text-[#95AAAD] Gilroy text-base text-left'>Handle warranty claims <br /> with precision and speed,<br /> backed by data-driven <br /> workflows.</p>
+                    </div>
+                    <div className='absolute top-[44%] left-[0%] '>
+                        <p className='text-[#95AAAD] Gilroy text-base text-right'>Bring stakeholders together <br /> on one cohesive platform for  <br /> seamless collaboration.</p>
+                    </div>
+                    <div className='absolute top-[47%] right-[4%] '>
+                        <p className='text-[#95AAAD] Gilroy text-base text-left'>Ensure seamless return   <br /> processes for improved <br /> customer experiences.</p>
+                    </div>
+                    <div className='absolute bottom-[13%] right-[10%] '>
+                        <p className='text-[#95AAAD] Gilroy text-base text-left'>Streamline recovery   <br /> operations to minimize losses <br /> and maximize efficiency.</p>
+                    </div>
+                    <div className='absolute bottom-[14%] left-[9%] '>
+                        <p className='text-[#95AAAD] Gilroy text-base text-right'>Optimize operations with   <br /> intelligent, automated <br /> workflows that drive results.</p>
+                    </div>
+                    <div className='absolute bottom-[-2%] left-[40%] '>
+                        <p className='text-[#95AAAD] Gilroy text-base text-left'>Transform raw data into   <br /> actionable insights for <br /> smarter decision-making.</p>
+                    </div>
+                </div>
             </div>
 
             <div className='py-8 w-large mx-auto'>
