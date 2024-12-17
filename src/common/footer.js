@@ -4,7 +4,7 @@ import Logo from "../assets/images/logo.png"
 function Footer() {
     return (
         <div className='bg-headerBackground bg-cover bg-no-repeat pt-12'>
-            <img src={Logo} className='mx-auto' />
+            <img src={Logo} className='mx-auto' alt="logo" />
             <p className='text-center text-[#95AAAD] Gilroy text-lg py-8'>Since 2015, CodeWarranty has been a leading web and mobile app development agency, <br /> specializing in creating custom solutions for businesses.</p>
             <div className='grid grid-cols-5 gap-4 text-[#95AAAD] mt-5 px-8'>
                 <div className=' col-span-1'>

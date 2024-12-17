@@ -1,4 +1,5 @@
 import React from 'react'
+import Input from './input'
 
 function Contact() {
     return (
@@ -35,7 +36,89 @@ function Contact() {
                     </div>
                 </div>
             </div>
-        </div>
+
+            <div className='grid grid-cols-12 gap-4'>
+                <div className='col-span-6'>
+                    <Input placeholder='Enter'
+                        type='text'
+                        label='Full Name' />
+                </div>
+                <div className='col-span-6'>
+                    <Input placeholder='Enter'
+                        type='text'
+                        label='Last Name' />
+                </div>
+                <div className='col-span-6'>
+                    <Input placeholder='Enter'
+                        type='email'
+                        label='Email ID' />
+                </div>
+                <div className='col-span-6'>
+                    <Input placeholder='Enter'
+                        type='tel'
+                        label='Phone No.' />
+                </div>
+                <div className='col-span-12'>
+                    <p className='Gilroy text-white'>Product Name*</p>
+                    <div className='grid grid-cols-12 gap-0 my-4'>
+                        <div className='col-span-3'>
+                            <div className=''>
+                                <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike" className='accent-[#104649] bg-transparent' />
+                                <label for="vehicle1" className='text-[#00FFFC] Gilroy'> CodeWarranty Catalog</label>
+                            </div>
+                        </div>
+                        <div className='col-span-3'>
+                            <div className=''>
+                                <input type="checkbox" id="vehicle2" name="vehicle2" value="Car" className='accent-[#104649] bg-transparent' />
+                                <label for="vehicle2" className='text-[#00FFFC] Gilroy'> CodeWarranty Warranty</label>
+                            </div>
+                        </div>
+                        <div className='col-span-3'>
+                            <div>
+                                <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat" className='accent-[#104649] bg-transparent' />
+                                <label for="vehicle3" className='text-[#00FFFC] Gilroy'> CodeWarranty Manual</label>
+                            </div>
+                        </div>
+                        <div className='col-span-3'></div>
+                        <div className='col-span-3'>
+                            <div className=''>
+                                <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike" className='accent-[#104649] bg-transparent' />
+                                <label for="vehicle1" className='text-[#00FFFC] Gilroy'> CodeWarranty Desk</label>
+                            </div>
+                        </div>
+                        <div className='col-span-3'>
+                            <div >
+                                <input type="checkbox" id="vehicle2" name="vehicle2" value="Car" className='accent-[#104649] bg-transparent' />
+                                <label for="vehicle2" className='text-[#00FFFC] Gilroy'> CodeWarranty RMS</label>
+                            </div>
+                        </div>
+                        <div className='col-span-3'></div>
+                        <div className='col-span-3'></div>
+                    </div>
+                </div>
+                <div className='col-span-12'>
+                    <div className="relative rounded-lg border border-[#104649]">
+                        <label
+                            htmlFor="description"
+                            className=" text-[#00FFFC] Brockmann text-sm absolute top-4 left-4"
+                        >
+                            Description of inquiry
+                        </label>
+                        <textarea
+                            id="description"
+                            rows="4"
+                            name="description"
+                            maxLength={150}
+                            className="resize-none block px-4 pb-4 pt-8 w-full text-base outline-none font-medium rounded-lg bg-[transparent] appearance-none peer placeholder-[#fff] text-[#fff]"
+                        ></textarea>
+                    </div>
+                </div>
+
+                <div className='col-span-12 text-center py-10'>
+                    <button className='text-[#000] text-base bg-[#00FFFC] Brockmann rounded-lg px-12 py-4 uppercase'>Send Message</button>
+                </div>
+            </div>
+        </div >
     )
 }
 

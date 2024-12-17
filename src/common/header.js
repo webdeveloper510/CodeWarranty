@@ -6,10 +6,10 @@ function Header() {
         <div className='p-6'>
             <div className='grid grid-cols-12 gap-4'>
                 <div className='col-span-3'>
-                    <img src={Logo} />
+                    <img src={Logo} alt="logo" />
                 </div>
-                <div className='col-span-6'></div>
-                <div className='col-span-3'>
+                <div className='col-span-5'></div>
+                <div className='col-span-4'>
                     <div className='border-[#104649] border flex justify-between rounded-[10px]'>
                         <button className='text-[#95AAAD] px-5 py-3 '>Services</button>
                         <button className='text-[#95AAAD] px-5 py-3 mx-auto'>Blogs</button>

@@ -3,12 +3,13 @@ module.exports = {
   theme: {
     extend: {
       width: {
-        large: "1200px",
+        large: "90%",
         1366: "1095px",
         tablet: "880px",
       },
       backgroundImage: {
         "headerBackground": "url('/src/assets/images/Mask group.png')",
+        "headerBackground1": "url('/src/assets/images/banner1.png')",
       },
       backgroundClip: {
         text: "text", // Add this line
