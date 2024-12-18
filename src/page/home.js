@@ -1,6 +1,5 @@
 import React from 'react'
 import Header from '../common/header'
-import Banner from '../assets/images/Group12.png'
 import Banner1 from '../assets/images/video.png'
 import Mask from '../assets/images/Warranty.svg'
 import Mask1 from '../assets/images/Vector.png'
@@ -18,6 +17,7 @@ import Business6 from '../assets/images/ImproveData-DrivenDecisionMaking.png'
 import custom from '../assets/images/CustomDevelopment.png'
 import custom1 from '../assets/images/End-to-EndSupport.png'
 import deliver from '../assets/images/Deliver.png'
+import deliver1 from '../assets/images/DeliverMobile.png'
 import Footer from '../common/footer'
 import CustomAccordion from '../common/accordion'
 import Contact from '../common/contact'
@@ -80,31 +80,12 @@ function Home() {
         <div className='bg-[#002025] bg-headerBackground1 bg-contain bg-no-repeat'>
             <div className='w-large mx-auto'>
                 <Header />
-                <div className='grid grid-cols-12 gap-0 pb-8'>
-                    <div className='col-span-2'></div>
-                    <div className='col-span-8 pt-5 px-6'>
-                        <h1 className='text-center text-white text-[55px] leading-none	Brockmann'><span className='text-[#00FFFC]'>Transform</span> Your <span className='text-[#00FFFC]'>Business</span> with Advanced <span className='text-[#00FFFC]'>Warranty</span> <span className='text-[#00FFFC]'>  SaaS Solutions </span></h1>
-                        <p className='text-white text-xl text-center py-5 Gilroy'>Effortless Warranty Management Tailored for Growth</p>
-                        <div className='grid grid-cols-12 gap-3'>
-                            <div className='col-span-4 border-r pr-3'>
-                                <p className='text-right text-lg pl-8 leading-1 Gilroy text-white'>Empowered by InsureTech and Built for Compliance</p>
-                            </div>
-                            <div className='col-span-8 flex self-center Gilroy'>
-                                <p className='text-[#95AAAD]'>Optimize your warranty operations with our smart and scalable software, designed to enhance efficiency, reduce costs, and deliver exceptional customer experiences.</p>
-                            </div>
-                        </div>
-                        <div className='text-center py-5'>
-                            <button className="bg-[#8BC542] Gilroy uppercase py-4 px-6 rounded-md text-white font-medium">Book A Demo</button>
-                        </div>
-                        <img src={Banner} alt="banner" />
-                    </div>
-                    <div className='col-span-2'></div>
-                </div>
+
             </div>
 
             <div className='py-12 w-large mx-auto'>
                 <h1 className='text-white text-center text-3xl leading-none Brockmann'><span className='text-[#00FFFC]'> All-in-One </span> Warranty <br /> Management Platform</h1>
-                <div className='grid grid-cols-12 gap-0'>
+                <div className='grid lg:grid-cols-12 md:grid-cols-6 sm:grid-cols-6 gap-0'>
                     <div className='col-span-3'></div>
                     <div className='col-span-6'>
                         <p className='text-white text-center text-xl py-4 Brockmann'>Simplify, Automate, and Transform Your Warranty Operations
@@ -171,7 +152,7 @@ function Home() {
             <div className='py-8 w-large mx-auto'>
                 <h1 className='text-3xl Brockmann text-white text-center'>Comprehensive Warranty <br /> Lifecycle Solutions</h1>
                 <p className='text-[#95AAAD] text-lg text-center Gilroy py-6'>Streamlined processes for every stage of the warranty journey, tailored for efficiency and accuracy.</p>
-                <div className='grid grid-cols-12 gap-4 py-5 px-8'>
+                <div className='grid lg:grid-cols-12 md:grid-cols-8 sm:grid-cols-4 gap-4 py-5 px-8'>
                     <div className='col-span-4 text-white'>
                         <img src={Dealer} alt="mask" />
                         <h1 className='pt-2 Brockmann'>Dealer Claims Management</h1>
@@ -219,7 +200,7 @@ function Home() {
             <div className='py-8 w-large mx-auto'>
                 <h1 className='text-[#95AAAD] Brockmann text-3xl text-center'>Business Benefits Of <span className='text-[#00FFFC]'> CodeWarranty </span></h1>
                 <p className='text-[#95AAAD] text-center Gilroy py-6'>Transforming warranty management through automation, analytics, and seamless integration.</p>
-                <div className='grid grid-cols-12 gap-4 text-white px-8'>
+                <div className='grid lg:grid-cols-12 md:grid-cols-6 sm:grid-cols-6 gap-4 text-white px-8'>
                     <div className='col-span-6 h-full'>
                         <div className='border border-[#104649] p-8 rounded-lg h-full'>
                             <img src={Business} className='py-4' alt="mask" />
@@ -301,14 +282,15 @@ function Home() {
                 <p className='text-[#95AAAD] w-2/3 mx-auto text-base text-center Gilroy '>At CodeWarranty, we pride ourselves on creating innovative warranty management solutions tailored to a wide array of industries. Our flexible platform and expertise empower businesses to achieve efficiency,
                     scalability, and customer satisfaction, no matter the vertical.</p>
 
-                <img src={deliver} className='mt-12' alt="mask" />
+                <img src={deliver} className='mt-12 mx-auto lg:block md:hidden sm:hidden' alt="mask" />
+                <img src={deliver1} className='mt-12 mx-auto lg:hidden md:block sm:block' alt="mask" />
 
             </div>
 
             <div className='py-8 w-large mx-auto'>
                 <h1 className='text-3xl Brockmann text-white text-center'>Custom Solutions Tailored for You</h1>
                 <p className='text-[#95AAAD] w-2/3 mx-auto text-base text-center Gilroy '>We understand that every business is unique. That’s why we offer:</p>
-                <div className='grid grid-cols-12 gap-4 text-white px-12 py-8'>
+                <div className='grid lg:grid-cols-12 md:grid-cols-6 sm:grid-cols-6 gap-4 text-white px-12 py-8'>
                     <div className='col-span-6 h-full'>
                         <div className='border border-[#104649] p-8 rounded-lg h-full'>
                             <img src={custom} className='py-4' alt="mask" />
@@ -344,8 +326,8 @@ function Home() {
                 <p className='text-[#95AAAD] text-center Gilroy py-6'>Discover the key features to automate the warranty management process</p>
 
 
-                <div className='grid grid-cols-2 gap-4 px-8'>
-                    <div className='col-span-1 text-white'>
+                <div className='grid lg:grid-cols-2 md:grid-cols-1 sm:grid-cols-1 gap-4 px-8'>
+                    <div className='col-span-1 lg:order-none md:order-2 sm:order-2 text-white'>
                         <h1 className='Brockmann text-xl'>Multiple Claim Types</h1>
                         <p className='text-[#95AAAD] text-lg Gilroy py-4 pr-8'>The platform supports different types of claims such as:</p>
                         <h1 className='flex Gilroy '> <img src={Mask} alt="mask" className='pr-2 self-start' />Warranty Claims</h1>
@@ -362,13 +344,13 @@ function Home() {
                         </div>
                     </div>
 
-                    <div className='flex'>
+                    <div className='lg:order-none md:order-1 sm:order-1 flex'>
                         <img src={Banner1} className='px-6 self-center' alt="mask" />
                     </div>
-                    <div className='flex'>
+                    <div className='lg:order-none md:order-3 sm:order-3 flex'>
                         <img src={Banner1} className='px-6 self-center' alt="mask" />
                     </div>
-                    <div className='col-span-1 text-white mt-3'>
+                    <div className='col-span-1 text-white lg:order-none md:order-4 sm:order-4 mt-3'>
                         <h1 className='Brockmann text-xl'>Advanced Pricing Features</h1>
                         <p className='text-[#95AAAD] text-lg Gilroy py-4 pr-8'>The system supports managing dealer-specific price books with different pricing models, including:</p>
                         <h1 className='flex Gilroy '> <img src={Mask} alt="mask" className='pr-2 self-start' />Regular Pricing</h1>
@@ -384,7 +366,7 @@ function Home() {
                             <p className='text-[#95AAAD] Gilroy pb-3 flex'><img src={Mask1} alt="mask" className='pr-2 self-center' /> Drives sales through strategic pricing for large orders.</p>
                         </div>
                     </div>
-                    <div className='col-span-1 text-white mt-3'>
+                    <div className='col-span-1 text-white lg:order-none md:order-6 sm:order-6 mt-3'>
                         <h1 className='Brockmann text-xl'>Real-Time Claim Tracking</h1>
                         <p className='text-[#95AAAD] text-lg Gilroy py-4 pr-8'>Track claims at every stage of their lifecycle with features like:</p>
                         <h1 className='flex Gilroy '> <img src={Mask} alt="mask" className='pr-2 self-start' />Status Updates</h1>
@@ -400,13 +382,13 @@ function Home() {
                             <p className='text-[#95AAAD] Gilroy pb-3 flex'><img src={Mask1} alt="mask" className='pr-2 self-center' /> Ensures accurate record-keeping and faster resolutions.</p>
                         </div>
                     </div>
-                    <div className='flex'>
+                    <div className='lg:order-none md:order-5 sm:order-5 flex'>
                         <img src={Banner1} className='px-6 self-center' alt="mask" />
                     </div>
-                    <div className='flex'>
+                    <div className='lg:order-none md:order-7 sm:order-7 flex'>
                         <img src={Banner1} className='px-6 self-center' alt="mask" />
                     </div>
-                    <div className='col-span-1 text-white mt-3'>
+                    <div className='col-span-1 text-white lg:order-none md:order-8 sm:order-8 mt-3'>
                         <h1 className='Brockmann text-xl'>Dealer Management Tools</h1>
                         <p className='text-[#95AAAD] text-lg Gilroy py-4 pr-8'> Facilitate efficient dealer operations with features like:</p>
                         <h1 className='flex Gilroy '> <img src={Mask} alt="mask" className='pr-2 self-start' />Dealer Approval Workflows</h1>
@@ -422,7 +404,7 @@ function Home() {
                             <p className='text-[#95AAAD] Gilroy pb-3 flex'><img src={Mask1} alt="mask" className='pr-2 self-center' /> Ensures transparency in claims and contract handling.</p>
                         </div>
                     </div>
-                    <div className='col-span-1 text-white mt-3'>
+                    <div className='col-span-1 lg:order-none md:order-10 sm:order-10 text-white mt-3'>
                         <h1 className='Brockmann text-xl'>Reporting and Insights</h1>
                         <p className='text-[#95AAAD] text-lg Gilroy py-4 pr-8'>Generate comprehensive reports to analyze performance across warranty operations:</p>
                         <h1 className='flex Gilroy '> <img src={Mask} alt="mask" className='pr-2 self-start' />Claims Reporting</h1>
@@ -438,7 +420,7 @@ function Home() {
                             <p className='text-[#95AAAD] Gilroy pb-3 flex'><img src={Mask1} alt="mask" className='pr-2 self-center' /> Ensures better alignment of warranty operations with business goals.</p>
                         </div>
                     </div>
-                    <div className='flex'>
+                    <div className='lg:order-none md:order-9 sm:order-9 flex'>
                         <img src={Banner1} className='px-6 self-center' alt="mask" />
                     </div>
 
@@ -449,11 +431,11 @@ function Home() {
             </div>
 
             <div className='w-large mx-auto'>
-                <div className='flex bg-[#04292B] justify-center text-white p-12 mx-8'>
-                    <div className='w-[50%]'>
-                        <h1 className='Gilroy text-3xl text-[#95AAAD]'>Your <span className='text-white'> warranty <br /> transformation begins now. </span> <br />  Let us simplify, automate, and <br /> elevate your operations.</h1>
+                <div className='lg:flex md:block sm:block bg-[#04292B] justify-center text-white p-12 mx-8'>
+                    <div className='lg:w-[50%] md:w-full sm:w-full'>
+                        <h1 className='Gilroy text-3xl text-[#95AAAD] lg:text-left md:text-center sm:text-center'>Your <span className='text-white'> warranty <br /> transformation begins now. </span> <br />  Let us simplify, automate, and <br /> elevate your operations.</h1>
                     </div>
-                    <p className='self-center Gilroy text-[#95AAAD] w-1/2 text-right'>Let us know if you'd like any further adjustments!</p>
+                    <p className='self-center Gilroy text-[#95AAAD] lg:w-[50%] md:w-full sm:w-full lg:text-right lg:pt-0 md:pt-5 sm:pt-5 md:text-center sm:text-center'>Let us know if you'd like any further adjustments!</p>
                 </div>
             </div>
 
