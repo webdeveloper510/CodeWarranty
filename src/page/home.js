@@ -281,10 +281,44 @@ function Home() {
                 <p className='text-[#00FFFC] text-lg text-center Gilroy py-4'>Custom Solutions Built to Meet Your Business Needs</p>
                 <p className='text-[#95AAAD] w-2/3 mx-auto text-base text-center Gilroy '>At CodeWarranty, we pride ourselves on creating innovative warranty management solutions tailored to a wide array of industries. Our flexible platform and expertise empower businesses to achieve efficiency,
                     scalability, and customer satisfaction, no matter the vertical.</p>
-
-                <img src={deliver} className='mt-12 mx-auto lg:block md:hidden sm:hidden' alt="mask" />
-                <img src={deliver1} className='mt-12 mx-auto lg:hidden md:block sm:block' alt="mask" />
-
+                <div className='relative'>
+                    <img src={deliver} className='mt-12 mx-auto lg:block md:hidden sm:hidden' alt="mask" />
+                    <img src={deliver1} className='mt-12 mx-auto lg:hidden md:block sm:block' alt="mask" />
+                    <div className='absolute opacity-0'>
+                        <p>
+                            Industries We
+                            Serve
+                        </p>
+                        <div>
+                            <h1>Furniture Insurance</h1>
+                            <p>Provide reliable warranty and recovery solutions for furniture retailers.</p>
+                        </div>
+                        <div>
+                            <h1>Appliances</h1>
+                            <p>Automate warranty registration and claims for home appliances.</p>
+                        </div>
+                        <div>
+                            <h1>Electric Vehicles</h1>
+                            <p>Enhance warranty services for next-gen automotive solutions.</p>
+                        </div>
+                        <div>
+                            <h1>Logistics and Insurance</h1>
+                            <p>Improve operational efficiency with streamlined claim management.</p>
+                        </div>
+                        <div>
+                            <h1>Agriculture Equipment</h1>
+                            <p>Simplify warranty processes for machinery and tools.</p>
+                        </div>
+                        <div>
+                            <h1>Consumer Electronics</h1>
+                            <p>Seamlessly manage warranties for gadgets and electronic devices.</p>
+                        </div>
+                        <div>
+                            <h1>Consumer Durables</h1>
+                            <p>Optimize warranty handling for long-term goods like appliances and equipment.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
 
             <div className='py-8 w-large mx-auto'>
