@@ -21,6 +21,14 @@ import deliver1 from '../assets/images/DeliverMobile.png'
 import Footer from '../common/footer'
 import CustomAccordion from '../common/accordion'
 import Contact from '../common/contact'
+import DeliverImage from '../assets/images/Industries.svg'
+import DeliverImage1 from '../assets/images/FurnitureInsurance.svg'
+import DeliverImage2 from '../assets/images/Appliances.svg'
+import DeliverImage3 from '../assets/images/ElectricVehicles.svg'
+import DeliverImage4 from '../assets/images/LogisticsandInsurance.svg'
+import DeliverImage5 from '../assets/images/AgricultureEquipment.svg'
+import DeliverImage6 from '../assets/images/ConsumerElectronics.svg'
+import DeliverImage7 from '../assets/images/ConsumerDurables.svg'
 function Home() {
 
     const accordionItems = [
@@ -276,46 +284,57 @@ function Home() {
                 </div>
             </div>
 
-            <div className='py-8'>
+            <div className='py-8 w-large mx-auto'>
                 <h1 className='text-3xl Brockmann text-white text-center'>We Deliver Across Diverse <br /> Verticals and Industries</h1>
                 <p className='text-[#00FFFC] text-lg text-center Gilroy py-4'>Custom Solutions Built to Meet Your Business Needs</p>
-                <p className='text-[#95AAAD] w-2/3 mx-auto text-base text-center Gilroy '>At CodeWarranty, we pride ourselves on creating innovative warranty management solutions tailored to a wide array of industries. Our flexible platform and expertise empower businesses to achieve efficiency,
+                <p className='text-[#95AAAD] w-2/3 mx-auto text-base text-center Gilroy mb-3'>At CodeWarranty, we pride ourselves on creating innovative warranty management solutions tailored to a wide array of industries. Our flexible platform and expertise empower businesses to achieve efficiency,
                     scalability, and customer satisfaction, no matter the vertical.</p>
                 <div className='relative'>
-                    <img src={deliver} className='mt-12 mx-auto lg:block md:hidden sm:hidden' alt="mask" />
-                    <img src={deliver1} className='mt-12 mx-auto lg:hidden md:block sm:block' alt="mask" />
-                    <div className='absolute opacity-0'>
-                        <p>
-                            Industries We
-                            Serve
-                        </p>
-                        <div>
-                            <h1>Furniture Insurance</h1>
-                            <p>Provide reliable warranty and recovery solutions for furniture retailers.</p>
+                    {/* <img src={deliver} className='mt-12 mx-auto lg:block md:hidden sm:hidden' alt="mask" />
+                    <img src={deliver1} className='mt-12 mx-auto lg:hidden md:block sm:block' alt="mask" /> */}
+                    <div className='grid lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-1 gap-4 mt-5'>
+                        <div className='bg-[#04292B] text-[#00FFFC] text-3xl p-8 border border-[#104649] rounded-xl'>
+                            <p className='text-left text-3xl font-semibold Gilroy'>
+                                Industries <br /> We
+                            </p>
+                            <p className='text-3xl font-semibold Gilroy flex justify-start'>
+                                Serve <img src={DeliverImage} />
+                            </p>
                         </div>
-                        <div>
-                            <h1>Appliances</h1>
-                            <p>Automate warranty registration and claims for home appliances.</p>
+                        <div className='bg-[#04292b] p-8 rounded-xl '>
+                            <img src={DeliverImage1} className='mb-3' />
+                            <h1 className='text-lg Brockmann text-white '>Furniture Insurance</h1>
+                            <p className='text-[#95AAAD] Gilroy text-base'>Provide reliable warranty and recovery solutions for furniture retailers.</p>
                         </div>
-                        <div>
-                            <h1>Electric Vehicles</h1>
-                            <p>Enhance warranty services for next-gen automotive solutions.</p>
+                        <div className='bg-[#104342] p-8 rounded-xl'>
+                            <img src={DeliverImage2} className='mb-3' />
+                            <h1 className='text-lg Brockmann text-white'>Appliances</h1>
+                            <p className='text-[#95AAAD] Gilroy text-base'>Automate warranty registration and claims for home appliances.</p>
                         </div>
-                        <div>
-                            <h1>Logistics and Insurance</h1>
-                            <p>Improve operational efficiency with streamlined claim management.</p>
+                        <div className='bg-[#04292b] p-8 rounded-xl'>
+                            <img src={DeliverImage3} className='mb-3' />
+                            <h1 className='text-lg Brockmann text-white'>Electric Vehicles</h1>
+                            <p className='text-[#95AAAD] Gilroy text-base'>Enhance warranty services for next-gen automotive solutions.</p>
                         </div>
-                        <div>
-                            <h1>Agriculture Equipment</h1>
-                            <p>Simplify warranty processes for machinery and tools.</p>
+                        <div className='bg-[#04292b] p-8 rounded-xl'>
+                            <img src={DeliverImage4} className='mb-4' />
+                            <h1 className='text-lg Brockmann text-white'>Logistics and Insurance</h1>
+                            <p className='text-[#95AAAD] Gilroy text-base'>Improve operational efficiency with streamlined claim management.</p>
                         </div>
-                        <div>
-                            <h1>Consumer Electronics</h1>
-                            <p>Seamlessly manage warranties for gadgets and electronic devices.</p>
+                        <div className='bg-[#104342] p-8 rounded-xl'>
+                            <img src={DeliverImage5} className='mb-5' />
+                            <h1 className='text-lg Brockmann text-white'>Agriculture Equipment</h1>
+                            <p className='text-[#95AAAD] Gilroy text-base'>Simplify warranty processes for machinery and tools.</p>
                         </div>
-                        <div>
-                            <h1>Consumer Durables</h1>
-                            <p>Optimize warranty handling for long-term goods like appliances and equipment.</p>
+                        <div className='bg-[#04292b] p-8 rounded-xl'>
+                            <img src={DeliverImage6} className='mb-3' />
+                            <h1 className='text-lg Brockmann text-white'>Consumer Electronics</h1>
+                            <p className='text-[#95AAAD] Gilroy text-base'>Seamlessly manage warranties for gadgets and electronic devices.</p>
+                        </div>
+                        <div className='bg-[#104342] p-8 rounded-xl'>
+                            <img src={DeliverImage7} className='mb-3' />
+                            <h1 className='text-lg Brockmann text-white'>Consumer Durables</h1>
+                            <p className='text-[#95AAAD] Gilroy text-base'>Optimize warranty handling for long-term goods like appliances and equipment.</p>
                         </div>
                     </div>
                 </div>
