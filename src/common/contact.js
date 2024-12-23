@@ -4,7 +4,7 @@ import Input from './input'
 function Contact() {
     return (
         <div>
-            <div className='w-2/3 mx-auto'>
+            <div className=' mx-auto'>
                 <h1 className='text-[#95AAAD] Brockmann text-[45px] text-center'>Schedule a <span className='text-[#00FFFC]'> Free Demo</span>, and <span className='text-[#8BC542]'> Go Live  in just 7 days </span> </h1>
             </div>
             <p className='text-[#95AAAD] text-center Gilroy py-6'>Experience Seamless Warranty Management Like Never Before</p>
@@ -40,22 +40,22 @@ function Contact() {
             </div>
 
             <div className='grid grid-cols-12 gap-4'>
-                <div className='col-span-6'>
+                <div className='lg:col-span-6 md:col-span-6 sm:col-span-12 s:col-span-12'>
                     <Input placeholder='Enter'
                         type='text'
                         label='Full Name' />
                 </div>
-                <div className='col-span-6'>
+                <div className='lg:col-span-6 md:col-span-6 sm:col-span-12 s:col-span-12'>
                     <Input placeholder='Enter'
                         type='text'
                         label='Last Name' />
                 </div>
-                <div className='col-span-6'>
+                <div className='lg:col-span-6 md:col-span-6 sm:col-span-12 s:col-span-12'>
                     <Input placeholder='Enter'
                         type='email'
                         label='Email ID' />
                 </div>
-                <div className='col-span-6'>
+                <div className='lg:col-span-6 md:col-span-6 sm:col-span-12 s:col-span-12'>
                     <Input placeholder='Enter'
                         type='tel'
                         label='Phone No.' />

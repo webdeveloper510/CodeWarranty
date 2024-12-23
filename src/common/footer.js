@@ -6,7 +6,7 @@ function Footer() {
         <div className='bg-headerBackground bg-cover bg-no-repeat pt-12'>
             <img src={Logo} className='mx-auto' alt="logo" />
             <p className='text-center text-[#95AAAD] Gilroy text-lg py-8'>Since 2015, CodeWarranty has been a leading web and mobile app development agency, <br /> specializing in creating custom solutions for businesses.</p>
-            <div className='grid grid-cols-5 gap-4 text-[#95AAAD] mt-5 px-8'>
+            <div className='grid lg:grid-cols-5 md:grid-cols-5 sm:grid-cols-2 s:grid-cols-2 gap-4 text-[#95AAAD] mt-5 px-8'>
                 <div className=' col-span-1'>
                     <h1 className='Brockmann text-xl text-white'>Most Popular</h1>
                     <p className='Gilroy text-lg'>Smartphones </p>
@@ -53,16 +53,23 @@ function Footer() {
                     <p className='Gilroy text-lg'>  Toys</p>
                     <p className='Gilroy text-lg'>  Watches</p>
                 </div>
-                <div className=' col-span-1'>
-                    <h1 className='Brockmann text-xl text-white'>Sports Equipment</h1>
-                    <p className='Gilroy text-lg'>Cycling </p>
-                    <p className='Gilroy text-lg'> Fitness Equipment
-                    </p>
-                    <p className='Gilroy text-lg'>  Golf</p>
-                    <h1 className='Brockmann text-xl text-white pt-5'>Brand</h1>
-                    <p className='Gilroy text-lg'>  Samsung mobile
-                    </p>
-                    <p className='Gilroy text-lg'>  Iphone mobile</p>
+                <div className=' lg:col-span-1 md:col-span-1 sm:col-span-2 s:col-span-2'>
+                    <div className='grid lg:grid-cols-1 md:grid-cols-1 sm:grid-cols-2 s:grid-cols-2 gap-0'>
+                        <div>
+                            <h1 className='Brockmann text-xl text-white'>Sports Equipment</h1>
+                            <p className='Gilroy text-lg'>Cycling </p>
+                            <p className='Gilroy text-lg'> Fitness Equipment
+                            </p>
+                            <p className='Gilroy text-lg'>  Golf</p>
+                        </div>
+                        <div>
+                            <h1 className='Brockmann text-xl text-white lg:pt-5 md:pt-5 sm:pt-0 s:pt-0'>Brand</h1>
+                            <p className='Gilroy text-lg'>  Samsung mobile
+                            </p>
+                            <p className='Gilroy text-lg'>  Iphone mobile</p>
+                        </div>
+                    </div>
+
                 </div>
             </div>
 

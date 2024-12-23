@@ -9,3 +9,11 @@
 .Gilroy {
     font-family: 'Gilroy-Medium', sans-serif;
  } 
+
+ .react-multiple-carousel__arrow--right {
+    right: -15px;
+}
+
+.react-multiple-carousel__arrow--left {
+    left: -15px;
+}
