@@ -106,7 +106,7 @@ function Home() {
         },
         tablet: {
             breakpoint: { max: 1024, min: 464 },
-            items: 2
+            items: 1
         },
         mobile: {
             breakpoint: { max: 464, min: 0 },
@@ -158,7 +158,7 @@ function Home() {
             <div className='py-8 text-center w-large mx-auto'>
                 <h2 className='text-white text-2xl Brockmann'>Complete Lifecycle Management</h2>
                 <p className='text-[#95AAAD] Gilroy text-base'>Our platform brings together every stage of the warranty process to maximize efficiency and deliver value:</p>
-                <div className='relative mt-6 md:block sm:hidden s:hidden'>
+                <div className='relative mt-6 lg:block md:hidden sm:hidden s:hidden'>
                     <img src={lifecycle} className='mx-auto px-16 py-8' alt="mask" />
                     <div className='absolute top-5 3xl:left-[43%] 2xl:left-[41%] xl:left-[40%] lg:left-[37%] '>
                         <p className='text-[#95AAAD] Gilroy text-base'>Simplify product setup <br /> with, registrations, and <br /> service plans</p>
@@ -185,7 +185,7 @@ function Home() {
                         <p className='text-[#95AAAD] Gilroy text-base text-left'>Transform raw data into   <br /> actionable insights for <br /> smarter decision-making.</p>
                     </div>
                 </div>
-                <div className='mt-6 md:hidden sm:block s:block'>
+                <div className='mt-6 lg:hidden md:block sm:block s:block'>
                     <div className='grid grid-cols-1 gap-4'>
                         <div className='flex justify-start'>
                             <img src={Onboard} alt="mask" className='md:w-[170px] sm:w-[120px] s:w-[100px]' />
@@ -242,48 +242,100 @@ function Home() {
             <div className='py-8 w-large mx-auto'>
                 <h2 className='text-3xl Brockmann text-white text-center'>Comprehensive Warranty <br /> Lifecycle Solutions</h2>
                 <p className='text-[#95AAAD] text-lg text-center Gilroy py-6'>Streamlined processes for every stage of the warranty journey, tailored for efficiency and accuracy.</p>
-                <div className='grid lg:grid-cols-12 md:grid-cols-8 sm:grid-cols-4 gap-4 py-5 px-8'>
-                    <div className='col-span-4 text-white'>
-                        <img src={Dealer} alt="mask" />
-                        <h2 className='pt-2 Brockmann'>Dealer Claims Management</h2>
-                        <p className='py-2 text-[#95AAAD] Gilroy pr-12'>Empower dealers to submit and track
-                            claims efficiently with complete transparency and accuracy.</p>
-                        <div className='border-l border-[#8BC542] pl-3 Gilroy pr-16'>
-                            <h2 className='flex'><img src={Mask} alt="mask" className='pr-2' /> Warranty Validation</h2>
-                            <p className='text-[#95AAAD] pb-3'>Simplify in/out-of-warranty checks for quick resolutions.</p>
-                            <h2 className='flex'><img src={Mask} alt="mask" className='pr-2' /> Parts and Labor Validation</h2>
-                            <p className='text-[#95AAAD] pb-3'>Ensure accuracy in service costs and component validation.</p>
-                            <h2 className='flex'><img src={Mask} alt="mask" className='pr-2' /> Real-Time Claim Status</h2>
-                            <p className='text-[#95AAAD]'>Provide full visibility to keep stakeholders informed.</p>
+                <div className='lg:block md:hidden sm:block s:block'>
+                    <div className='grid lg:grid-cols-12 md:grid-cols-8 sm:grid-cols-4 s:grid-cols-4 gap-4 py-5 px-8'>
+                        <div className='col-span-4 text-white'>
+                            <img src={Dealer} alt="mask" />
+                            <h2 className='pt-2 Brockmann'>Dealer Claims Management</h2>
+                            <p className='py-2 text-[#95AAAD] Gilroy lg:pr-12 md:pr-8 sm:pr-4 s:pr-0'>Empower dealers to submit and track
+                                claims efficiently with complete transparency and accuracy.</p>
+                            <div className='border-l border-[#8BC542] pl-3 Gilroy lg:pr-16 md:pr-8 sm:pr-4 s:pr-0'>
+                                <h2 className='flex'><img src={Mask} alt="mask" className='pr-2' /> Warranty Validation</h2>
+                                <p className='text-[#95AAAD] pb-3'>Simplify in/out-of-warranty checks for quick resolutions.</p>
+                                <h2 className='flex'><img src={Mask} alt="mask" className='pr-2' /> Parts and Labor Validation</h2>
+                                <p className='text-[#95AAAD] pb-3'>Ensure accuracy in service costs and component validation.</p>
+                                <h2 className='flex'><img src={Mask} alt="mask" className='pr-2' /> Real-Time Claim Status</h2>
+                                <p className='text-[#95AAAD]'>Provide full visibility to keep stakeholders informed.</p>
+                            </div >
+                        </div >
+                        <div className='col-span-4 text-white'>
+                            <img src={Dealer1} alt="mask" />
+                            <h2 className='pt-2 Brockmann'>Manufacturer Claims Processing</h2>
+                            <p className='py-2 text-[#95AAAD] Gilroy lg:pr-12 md:pr-8 sm:pr-4 s:pr-0'>Enable manufacturers to automate and adjudicate claims faster, improving decision-making and reducing delays.</p>
+                            <div className='border-l border-[#8BC542] pl-3 Gilroy lg:pr-16 md:pr-8 sm:pr-4 s:pr-0'>
+                                <h2 className='flex'><img src={Mask} alt="mask" className='pr-2' /> Warranty Validation</h2>
+                                <p className='text-[#95AAAD] pb-3'>Verify eligibility quickly and accurately.</p>
+                                <h2 className='flex' > <img src={Mask} alt="mask" className='pr-2' />Streamlined Part Returns</h2>
+                                <p className='text-[#95AAAD] pb-3'>Simplify tracking and recovery of returned parts.</p>
+                                <h2 className='flex' > <img src={Mask} alt="mask" className='pr-2' />Full Transparency</h2>
+                                <p className='text-[#95AAAD]'>Offer clear claim insights and status updates for smoother operations.</p>
+                            </div >
+                        </div >
+                        <div className='col-span-4 text-white'>
+                            <img src={Dealer2} alt="mask" />
+                            <h2 className='pt-2 Brockmann'>Supplier Recovery Optimization</h2>
+                            <p className='py-2 text-[#95AAAD] Gilroy lg:pr-24 md:pr-12 sm:pr-4 s:pr-0'>Provide suppliers with a dedicated portal to manage cost recovery efficiently and effectively.</p>
+                            <div className='border-l border-[#8BC542] pl-3 Gilroy lg:pr-16 md:pr-8 sm:pr-4 s:pr-0'>
+                                <h2 className='flex'><img src={Mask} alt="mask" className='pr-2' /> Cost Recovery Tracking</h2>
+                                <p className='text-[#95AAAD] pb-3'>Streamline processes for supplier reimbursement.</p>
+                                <h2 className='flex' > <img src={Mask} alt="mask" className='pr-2' /> Parts and Labor Validation</h2>
+                                <p className='text-[#95AAAD] pb-3'>Confirm valid claims for accurate recovery.</p>
+                                <h2 className='flex' > <img src={Mask} alt="mask" className='pr-2' />Claim Visibility</h2>
+                                <p className='text-[#95AAAD]'>Maintain transparency across the claim lifecycle.</p>
+                            </div >
                         </div >
                     </div >
-                    <div className='col-span-4 text-white'>
-                        <img src={Dealer1} alt="mask" />
-                        <h2 className='pt-2 Brockmann'>Manufacturer Claims Processing</h2>
-                        <p className='py-2 text-[#95AAAD] Gilroy pr-12'>Enable manufacturers to automate and adjudicate claims faster, improving decision-making and reducing delays.</p>
-                        <div className='border-l border-[#8BC542] pl-3 Gilroy pr-16'>
-                            <h2 className='flex'><img src={Mask} alt="mask" className='pr-2' /> Warranty Validation</h2>
-                            <p className='text-[#95AAAD] pb-3'>Verify eligibility quickly and accurately.</p>
-                            <h2 className='flex' > <img src={Mask} alt="mask" className='pr-2' />Streamlined Part Returns</h2>
-                            <p className='text-[#95AAAD] pb-3'>Simplify tracking and recovery of returned parts.</p>
-                            <h2 className='flex' > <img src={Mask} alt="mask" className='pr-2' />Full Transparency</h2>
-                            <p className='text-[#95AAAD]'>Offer clear claim insights and status updates for smoother operations.</p>
-                        </div >
-                    </div >
-                    <div className='col-span-4 text-white'>
-                        <img src={Dealer2} alt="mask" />
-                        <h2 className='pt-2 Brockmann'>Supplier Recovery Optimization</h2>
-                        <p className='py-2 text-[#95AAAD] Gilroy pr-24'>Provide suppliers with a dedicated portal to manage cost recovery efficiently and effectively.</p>
-                        <div className='border-l border-[#8BC542] pl-3 Gilroy pr-16'>
-                            <h2 className='flex'><img src={Mask} alt="mask" className='pr-2' /> Cost Recovery Tracking</h2>
-                            <p className='text-[#95AAAD] pb-3'>Streamline processes for supplier reimbursement.</p>
-                            <h2 className='flex' > <img src={Mask} alt="mask" className='pr-2' /> Parts and Labor Validation</h2>
-                            <p className='text-[#95AAAD] pb-3'>Confirm valid claims for accurate recovery.</p>
-                            <h2 className='flex' > <img src={Mask} alt="mask" className='pr-2' />Claim Visibility</h2>
-                            <p className='text-[#95AAAD]'>Maintain transparency across the claim lifecycle.</p>
-                        </div >
-                    </div >
-                </div >
+                </div>
+                <div className='lg:hidden md:block sm:hidden s:hidden'>
+                    <div className='flex overflow-x-auto gap-2 scroll-smooth px-8'>
+                        <div className='min-w-[200px] w-[250px] flex-shrink-0 flex-grow-0 basis-auto'>
+                            <div className=' text-white'>
+                                <img src={Dealer} alt="mask" />
+                                <h2 className='pt-2 Brockmann'>Dealer Claims Management</h2>
+                                <p className='py-2 text-[#95AAAD] Gilroy '>Empower dealers to submit and track
+                                    claims efficiently with complete transparency and accuracy.</p>
+                                <div className='border-l border-[#8BC542] pl-3 Gilroy pr-4'>
+                                    <h2 className='flex'><img src={Mask} alt="mask" className='pr-2' /> Warranty Validation</h2>
+                                    <p className='text-[#95AAAD] pb-3'>Simplify in/out-of-warranty checks for quick resolutions.</p>
+                                    <h2 className='flex'><img src={Mask} alt="mask" className='pr-2' /> Parts and Labor Validation</h2>
+                                    <p className='text-[#95AAAD] pb-3'>Ensure accuracy in service costs and component validation.</p>
+                                    <h2 className='flex'><img src={Mask} alt="mask" className='pr-2' /> Real-Time Claim Status</h2>
+                                    <p className='text-[#95AAAD]'>Provide full visibility to keep stakeholders informed.</p>
+                                </div >
+                            </div>
+                        </div>
+                        <div className='min-w-[200px] w-[250px] flex-shrink-0 flex-grow-0 basis-auto'>
+                            <div className='text-white'>
+                                <img src={Dealer1} alt="mask" />
+                                <h2 className='pt-2 Brockmann'>Manufacturer Claims Processing</h2>
+                                <p className='py-2 text-[#95AAAD] Gilroy pr-4'>Enable manufacturers to automate and adjudicate claims faster, improving decision-making and reducing delays.</p>
+                                <div className='border-l border-[#8BC542] pl-3 Gilroy pr-4'>
+                                    <h2 className='flex'><img src={Mask} alt="mask" className='pr-2' /> Warranty Validation</h2>
+                                    <p className='text-[#95AAAD] pb-3'>Verify eligibility quickly and accurately.</p>
+                                    <h2 className='flex' > <img src={Mask} alt="mask" className='pr-2' />Streamlined Part Returns</h2>
+                                    <p className='text-[#95AAAD] pb-3'>Simplify tracking and recovery of returned parts.</p>
+                                    <h2 className='flex' > <img src={Mask} alt="mask" className='pr-2' />Full Transparency</h2>
+                                    <p className='text-[#95AAAD]'>Offer clear claim insights and status updates for smoother operations.</p>
+                                </div >
+                            </div>
+                        </div>
+                        <div className='min-w-[200px] w-[250px] flex-shrink-0 flex-grow-0 basis-auto'>
+                            <div className='text-white'>
+                                <img src={Dealer2} alt="mask" />
+                                <h2 className='pt-2 Brockmann'>Supplier Recovery Optimization</h2>
+                                <p className='py-2 text-[#95AAAD] Gilroy pr-4'>Provide suppliers with a dedicated portal to manage cost recovery efficiently and effectively.</p>
+                                <div className='border-l border-[#8BC542] pl-3 Gilroy pr-4'>
+                                    <h2 className='flex'><img src={Mask} alt="mask" className='pr-2' /> Cost Recovery Tracking</h2>
+                                    <p className='text-[#95AAAD] pb-3'>Streamline processes for supplier reimbursement.</p>
+                                    <h2 className='flex' > <img src={Mask} alt="mask" className='pr-2' /> Parts and Labor Validation</h2>
+                                    <p className='text-[#95AAAD] pb-3'>Confirm valid claims for accurate recovery.</p>
+                                    <h2 className='flex' > <img src={Mask} alt="mask" className='pr-2' />Claim Visibility</h2>
+                                    <p className='text-[#95AAAD]'>Maintain transparency across the claim lifecycle.</p>
+                                </div >
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <p className='text-center text-[#95AAAD] py-4 Gilroy'>Unlock efficiency and accuracy at every stage of the warranty lifecycle with tailored solutions for dealers, manufacturers, and suppliers.</p>
             </div >
 

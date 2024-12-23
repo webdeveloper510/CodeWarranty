@@ -24,14 +24,24 @@ function Header() {
                 <div className='lg:col-span-8 md:col-span-12 s:col-span-12 pt-5 px-6'>
                     <h1 className='text-center text-white text-[55px] leading-none	Brockmann'><span className='text-[#00FFFC]'>Transform</span> Your <span className='text-[#00FFFC]'>Business</span> with Advanced <span className='text-[#00FFFC]'>Warranty</span> <span className='text-[#00FFFC]'>  SaaS Solutions </span></h1>
                     <p className='text-white text-xl text-center py-5 Gilroy'>Effortless Warranty Management Tailored for Growth</p>
-                    <div className='grid grid-cols-12 gap-3'>
-                        <div className='col-span-4 border-r pr-3'>
-                            <p className='text-right text-lg pl-8 leading-1 Gilroy text-white'>Empowered by InsureTech and Built for Compliance</p>
-                        </div>
-                        <div className='col-span-8 flex self-center Gilroy'>
-                            <p className='text-[#95AAAD]'>Optimize your warranty operations with our smart and scalable software, designed to enhance efficiency, reduce costs, and deliver exceptional customer experiences.</p>
+                    <div className='lg:block md:block sm:hidden s:hidden'>
+                        <div className='grid grid-cols-12 gap-3'>
+                            <div className='col-span-4 border-r pr-3'>
+                                <p className='text-right text-lg pl-8 leading-1 Gilroy text-white'>Empowered by InsureTech and Built for Compliance</p>
+                            </div>
+                            <div className='col-span-8 flex self-center Gilroy'>
+                                <p className='text-[#95AAAD]'>Optimize your warranty operations with our smart and scalable software, designed to enhance efficiency, reduce costs, and deliver exceptional customer experiences.</p>
+                            </div>
                         </div>
                     </div>
+
+                    <div className='lg:hidden md:hidden sm:block s:block'>
+                        <p className='text-center text-lg leading-1 Gilroy text-white'>Empowered by InsureTech and Built for Compliance</p>
+                        <hr className='w-[30%] border-[#00FFFC] my-3 mx-auto' />
+                        <p className='text-[#95AAAD] text-center'>Optimize your warranty operations with our smart and scalable software, designed to enhance efficiency, reduce costs, and deliver exceptional customer experiences.</p>
+
+                    </div>
+
                     <div className='text-center py-5'>
                         <button className="bg-[#8BC542] Gilroy uppercase py-4 px-6 rounded-md text-white font-medium">Book A Demo</button>
                     </div>
