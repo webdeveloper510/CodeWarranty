@@ -119,10 +119,10 @@ function Home() {
         <div className='bg-[#002025] bg-headerBackground1 bg-contain bg-no-repeat'>
             <div className='w-large mx-auto'>
                 <Header />
-                <div className='grid grid-cols-12 gap-0 pb-8'>
+                <div className='grid grid-cols-12 gap-0 pb-8 xl:pt-12'>
                     <div className='col-span-2'></div>
                     <div className='lg:col-span-8 md:col-span-12 s:col-span-12 pt-5 px-6'>
-                        <h1 className='text-center text-white lg:text-[55px] md:text-[40px] sm:text-[34px] s:text-[34px] leading-none	Brockmann'><span className='text-[#00FFFC]'>Transform</span> Your <span className='text-[#00FFFC]'>Business</span> with Advanced <span className='text-[#00FFFC]'>Warranty</span> <span className='text-[#00FFFC]'>  SaaS Solutions </span></h1>
+                        <h1 className='xl:w-2/3 xl:mx-auto text-center text-white lg:text-[55px] md:text-[40px] sm:text-[34px] s:text-[34px] leading-none	Brockmann'><span className='text-[#00FFFC]'>Transform</span> Your <span className='text-[#00FFFC]'>Business</span> with Advanced <span className='text-[#00FFFC]'>Warranty</span> <span className='text-[#00FFFC]'>  SaaS Solutions </span></h1>
                         <p className='text-white text-xl text-center py-5 Gilroy'>Effortless Warranty Management Tailored for Growth</p>
                         <div className='lg:block md:block sm:hidden s:hidden'>
                             <div className='grid grid-cols-12 gap-3'>
@@ -152,7 +152,7 @@ function Home() {
             </div>
 
             <div className='py-12 w-large mx-auto'>
-                <h1 className='text-white text-center text-3xl leading-none Brockmann'><span className='text-[#00FFFC]'> All-in-One </span> Warranty <br /> Management Platform</h1>
+                <h2 className='text-white text-center text-3xl leading-none Brockmann xl:font-[500]'><span className='text-[#00FFFC]'> All-in-One </span> Warranty <br /> Management Platform</h2>
                 <div className='grid lg:grid-cols-12 md:grid-cols-6 sm:grid-cols-6 gap-0'>
                     <div className='col-span-3'></div>
                     <div className='col-span-6'>
@@ -190,28 +190,28 @@ function Home() {
                 <p className='text-[#95AAAD] Gilroy text-base'>Our platform brings together every stage of the warranty process to maximize efficiency and deliver value:</p>
                 <div className='relative mt-6 lg:block md:hidden sm:hidden s:hidden'>
                     <img src={lifecycle} className='mx-auto px-16 py-8' alt="mask" />
-                    <div className='absolute top-5 3xl:left-[43%] 2xl:left-[41%] xl:left-[40%] lg:left-[37%] '>
+                    <div className='absolute top-5 3xl:left-[43%] 2xl:left-[43%] xl:left-[40%] lg:left-[37%] '>
                         <p className='text-[#95AAAD] Gilroy text-base'>Simplify product setup <br /> with, registrations, and <br /> service plans</p>
                     </div>
-                    <div className='absolute top-[19%] 3xl:left-[22%] 2xl:left-[13%] xl:left-[10%] lg:left-[-2%] '>
+                    <div className='absolute top-[19%] 3xl:left-[22%] 2xl:left-[22%] xl:left-[10%] lg:left-[-2%] '>
                         <p className='text-[#95AAAD] Gilroy text-base text-right'>Foster deeper connections <br /> and enhance trust with <br /> customers and partners.</p>
                     </div>
-                    <div className='absolute top-[18%] 3xl:right-[23%] 2xl:right-[15%] xl:right-[12%] lg:right-[1%] '>
+                    <div className='absolute top-[18%] 3xl:right-[23%] 2xl:right-[23%] xl:right-[12%] lg:right-[1%] '>
                         <p className='text-[#95AAAD] Gilroy text-base text-left'>Handle warranty claims <br /> with precision and speed,<br /> backed by data-driven <br /> workflows.</p>
                     </div>
-                    <div className='absolute top-[44%] 3xl:left-[15%] 2xl:left-[3%] xl:left-[0%] lg:left-[-5%] '>
+                    <div className='absolute top-[44%] 3xl:left-[15%] 2xl:left-[15%] xl:left-[0%] lg:left-[-5%] '>
                         <p className='text-[#95AAAD] Gilroy text-base text-right'>Bring stakeholders together <br /> on one cohesive platform for  <br /> seamless collaboration.</p>
                     </div>
-                    <div className='absolute top-[47%] 3xl:right-[17%] 2xl:right-[6%] xl:right-[4%] lg:right-[-4%]'>
+                    <div className='absolute top-[47%] 3xl:right-[17%] 2xl:right-[17%] xl:right-[4%] lg:right-[-4%]'>
                         <p className='text-[#95AAAD] Gilroy text-base text-left'>Ensure seamless return   <br /> processes for improved <br /> customer experiences.</p>
                     </div>
-                    <div className='absolute bottom-[13%] 3xl:right-[22%] 2xl:right-[13%] xl:right-[10%] lg:right-[-2%] '>
+                    <div className='absolute bottom-[13%] 3xl:right-[22%] 2xl:right-[22%] xl:right-[10%] lg:right-[-2%] '>
                         <p className='text-[#95AAAD] Gilroy text-base text-left'>Streamline recovery   <br /> operations to minimize losses <br /> and maximize efficiency.</p>
                     </div>
-                    <div className='absolute bottom-[14%] 3xl:left-[22%] 2xl:left-[12%] xl:left-[9%] lg:left-[-3%]  '>
+                    <div className='absolute bottom-[14%] 3xl:left-[22%] 2xl:left-[22%] xl:left-[9%] lg:left-[-3%]  '>
                         <p className='text-[#95AAAD] Gilroy text-base text-right'>Optimize operations with   <br /> intelligent, automated <br /> workflows that drive results.</p>
                     </div>
-                    <div className='absolute bottom-[-2%] 3xl:left-[43%] 2xl:left-[41%]  xl:left-[40%] lg:left-[37%]'>
+                    <div className='absolute bottom-[-2%] 3xl:left-[43%] 2xl:left-[43%]  xl:left-[40%] lg:left-[37%]'>
                         <p className='text-[#95AAAD] Gilroy text-base text-left'>Transform raw data into   <br /> actionable insights for <br /> smarter decision-making.</p>
                     </div>
                 </div>

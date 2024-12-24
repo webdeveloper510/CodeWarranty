@@ -5,7 +5,7 @@ function Contact() {
     return (
         <div>
             <div className=' mx-auto'>
-                <h1 className='text-[#95AAAD] Brockmann text-[45px] text-center'>Schedule a <span className='text-[#00FFFC]'> Free Demo</span>, and <span className='text-[#8BC542]'> Go Live  in just 7 days </span> </h1>
+                <h1 className='text-[#95AAAD] Brockmann text-[40px] text-center'>Schedule a <span className='text-[#00FFFC]'> Free Demo</span>, and <span className='text-[#8BC542]'> Go Live  in just 7 days </span> </h1>
             </div>
             <p className='text-[#95AAAD] text-center Gilroy py-6'>Experience Seamless Warranty Management Like Never Before</p>
             <p className='Brockmann text-white text-2xl text-center'>How we can help you?</p>

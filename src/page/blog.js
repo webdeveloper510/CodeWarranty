@@ -140,8 +140,6 @@ function Blog() {
                         </div>
                         <div className='col-span-3'></div>
                     </div>
-
-
                 </div>
                 <Footer />
             </div>
