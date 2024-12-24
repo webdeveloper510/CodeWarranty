@@ -1,6 +1,7 @@
 import React from 'react'
 import Header from '../common/header'
 import Banner1 from '../assets/images/video.png'
+import Banner from '../assets/images/Group12.png'
 import Mask from '../assets/images/Warranty.svg'
 import Mask1 from '../assets/images/Vector.png'
 import lifecycle from '../assets/images/CompleteLifecycleManagement.png'
@@ -118,7 +119,36 @@ function Home() {
         <div className='bg-[#002025] bg-headerBackground1 bg-contain bg-no-repeat'>
             <div className='w-large mx-auto'>
                 <Header />
+                <div className='grid grid-cols-12 gap-0 pb-8'>
+                    <div className='col-span-2'></div>
+                    <div className='lg:col-span-8 md:col-span-12 s:col-span-12 pt-5 px-6'>
+                        <h1 className='text-center text-white lg:text-[55px] md:text-[40px] sm:text-[34px] s:text-[34px] leading-none	Brockmann'><span className='text-[#00FFFC]'>Transform</span> Your <span className='text-[#00FFFC]'>Business</span> with Advanced <span className='text-[#00FFFC]'>Warranty</span> <span className='text-[#00FFFC]'>  SaaS Solutions </span></h1>
+                        <p className='text-white text-xl text-center py-5 Gilroy'>Effortless Warranty Management Tailored for Growth</p>
+                        <div className='lg:block md:block sm:hidden s:hidden'>
+                            <div className='grid grid-cols-12 gap-3'>
+                                <div className='col-span-4 border-r pr-3'>
+                                    <p className='text-right text-lg pl-8 leading-1 Gilroy text-white'>Empowered by InsureTech and Built for Compliance</p>
+                                </div>
+                                <div className='col-span-8 flex self-center Gilroy'>
+                                    <p className='text-[#95AAAD]'>Optimize your warranty operations with our smart and scalable software, designed to enhance efficiency, reduce costs, and deliver exceptional customer experiences.</p>
+                                </div>
+                            </div>
+                        </div>
 
+                        <div className='lg:hidden md:hidden sm:block s:block'>
+                            <p className='text-center text-lg leading-1 Gilroy text-white'>Empowered by InsureTech and Built for Compliance</p>
+                            <hr className='w-[30%] border-[#00FFFC] my-3 mx-auto' />
+                            <p className='text-[#95AAAD] text-center'>Optimize your warranty operations with our smart and scalable software, designed to enhance efficiency, reduce costs, and deliver exceptional customer experiences.</p>
+
+                        </div>
+
+                        <div className='text-center py-5'>
+                            <button className="bg-[#8BC542] Gilroy uppercase py-4 px-6 rounded-md text-white font-medium">Book A Demo</button>
+                        </div>
+                        <img src={Banner} alt="banner" className='mx-auto' />
+                    </div>
+                    <div className='col-span-2'></div>
+                </div>
             </div>
 
             <div className='py-12 w-large mx-auto'>
@@ -342,7 +372,7 @@ function Home() {
             <div className='py-8 w-large mx-auto'>
                 <h2 className='text-[#95AAAD] Brockmann text-3xl text-center'>Business Benefits Of <span className='text-[#00FFFC]'> CodeWarranty </span></h2>
                 <p className='text-[#95AAAD] text-center Gilroy py-6'>Transforming warranty management through automation, analytics, and seamless integration.</p>
-                <div className='grid lg:grid-cols-12 md:grid-cols-6 sm:grid-cols-6 gap-4 text-white px-8'>
+                <div className='grid lg:grid-cols-12 md:grid-cols-6 sm:grid-cols-6 gap-4 text-white md:px-8 sm:px-1 s:px-0'>
                     <div className='col-span-6 h-full'>
                         <div className='border border-[#104649] p-8 rounded-lg h-full'>
                             <img src={Business} className='py-4' alt="mask" />
