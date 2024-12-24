@@ -129,13 +129,13 @@ function Blog() {
                         <div className='col-span-3 lg:block md:hidden sm:hidden s:hidden'></div>
                         <div className='col-span-6'>
                             <div className='flex justify-around'>
-                                <img src={leftArrow} className='w-[60px] h-[60px] cursor-pointer' />
+                                <img src={leftArrow} className='w-[60px] h-[60px] cursor-pointer' alt='Left Arrow' />
                                 <p className='self-center text-[#00FFFC] Brockmann cursor-pointer'>01</p>
                                 <p className='self-center text-[#95AAAD] Brockmann cursor-pointer'>02</p>
                                 <p className='self-center text-[#95AAAD] Brockmann cursor-pointer'>03</p>
                                 <p className='self-center text-[#95AAAD] Brockmann cursor-pointer'>04</p>
                                 <p className='self-center text-[#95AAAD] Brockmann cursor-pointer'>05</p>
-                                <img src={Arrow} className='w-[60px] h-[60px] cursor-pointer' />
+                                <img src={Arrow} className='w-[60px] h-[60px] cursor-pointer' alt='Right Arrow' />
                             </div>
                         </div>
                         <div className='col-span-3'></div>
