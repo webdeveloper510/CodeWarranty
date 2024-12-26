@@ -14,6 +14,7 @@ import BlogImage8 from '../assets/images/blog/blog (1).png'
 import Arrow from '../assets/images/blog/arrow.png'
 import leftArrow from '../assets/images/blog/leftArrow.png'
 import { Link } from 'react-router-dom'
+import Contact from '../common/contact'
 function Blog() {
     return (
         <>
@@ -159,6 +160,11 @@ function Blog() {
                         </div>
                         <div className='col-span-4'></div>
                     </div>
+                </div>
+
+                <div id='contactUs'></div>
+                <div className='py-8 w-large mx-auto'>
+                    <Contact />
                 </div>
                 <Footer />
             </div>

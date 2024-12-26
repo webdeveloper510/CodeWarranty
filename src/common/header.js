@@ -3,6 +3,22 @@ import Logo from "../assets/images/logo.png"
 import Menu from '../assets/images/menu.png'
 import { Link } from 'react-router-dom'
 function Header() {
+    const scrollToSection = (id) => {
+        const section = document.getElementById(id);
+        if (section) {
+            const headerOffset = 50;
+            const elementPosition = section.getBoundingClientRect().top;
+            const offsetPosition =
+                elementPosition + window.pageYOffset - headerOffset;
+
+            window.scrollTo({
+                top: offsetPosition,
+                behavior: "smooth",
+            });
+        }
+    };
+
+
     return (
         <>
             <div className='p-6'>
@@ -15,7 +31,7 @@ function Header() {
                         <div className='  md:flex sm:hidden s:hidden lg:w-[77%] md:w-full sm:w-full ml-auto'>
                             <Link className='text-[#95AAAD] border-[#104649] hover:text-[#00FFFC] hover:bg-[#104649] px-5 py-3 rounded-s-[7px] border' to='/'>Home</Link>
                             <Link className='text-[#95AAAD] hover:text-[#00FFFC] hover:bg-[#104649] border-[#104649] px-5 py-3 border' to='/blog'>Blogs</Link>
-                            <a className='text-[#95AAAD] border-[#104649] hover:text-[#00FFFC] hover:bg-[#104649] border px-4 py-3 rounded-e-[7px]' href='/#contactUs'>Contact Us</a>
+                            <a className='text-[#95AAAD] cursor-pointer border-[#104649] hover:text-[#00FFFC] hover:bg-[#104649] border px-4 py-3 rounded-e-[7px]' onClick={() => scrollToSection("contactUs")}>Contact Us</a>
                         </div>
                         <div className='md:hidden sm:block s:block ml-auto max-w-fit'>
                             <img src={Menu} alt='Menu' />

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Header from '../common/header'
 import Banner1 from '../assets/images/video.png'
 import Banner from '../assets/images/Group12.png'
@@ -115,6 +115,23 @@ function Home() {
         }
     };
 
+    const scrollToSection = (id) => {
+        const section = document.getElementById(id);
+        if (section) {
+            const headerOffset = 50; // Adjust this value based on your header height
+            const elementPosition = section.getBoundingClientRect().top;
+            const offsetPosition =
+                elementPosition + window.pageYOffset - headerOffset;
+
+            window.scrollTo({
+                top: offsetPosition,
+                behavior: "smooth",
+            });
+        }
+    };
+
+
+
     return (
         <div className='bg-[#002025] bg-headerBackground1 bg-contain bg-no-repeat'>
             <div className='w-large mx-auto'>
@@ -143,7 +160,7 @@ function Home() {
                         </div>
 
                         <div className='text-center py-5'>
-                            <button className="bg-[#8BC542] Gilroy uppercase py-4 px-6 rounded-md text-white font-medium">Book A Demo</button>
+                            <button onClick={() => scrollToSection("contactUs")} className="bg-[#8BC542] Gilroy uppercase py-4 px-6 rounded-md text-white font-medium">Book A Demo</button>
                         </div>
                         <img src={Banner} alt="banner" className='mx-auto' />
                     </div>
@@ -575,7 +592,7 @@ function Home() {
                         <h2 className='Gilroy text-3xl text-[#95AAAD]'><span className='text-white'> Let us know </span>  if you'd <br /> like further refinements!</h2>
                     </div>
                     <p className='self-center Gilroy text-[#95AAAD] lg:w-[50%] md:w-[50%] sm:w-full s:w-full lg:text-right md:text-right sm:text-center s:text-center'>
-                        <button className="bg-[#8BC542] Gilroy uppercase py-4 px-6 rounded-md text-white font-medium">Know More</button></p>
+                        <button onClick={() => scrollToSection("contactUs")} className="bg-[#8BC542] Gilroy uppercase py-4 px-6 rounded-md text-white font-medium">Know More</button></p>
                 </div>
             </div >
 
