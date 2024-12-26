@@ -4,6 +4,7 @@ import Input from './input'
 function Contact() {
     return (
         <div>
+
             <div className=' mx-auto'>
                 <h1 className='text-[#95AAAD] Brockmann text-[40px] text-center'>Schedule a <span className='text-[#00FFFC]'> Free Demo</span>, and <span className='text-[#8BC542]'> Go Live  in just 7 days </span> </h1>
             </div>

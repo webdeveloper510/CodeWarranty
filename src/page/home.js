@@ -122,7 +122,7 @@ function Home() {
                 <div className='grid grid-cols-12 gap-0 pb-8 xl:pt-12'>
                     <div className='col-span-2'></div>
                     <div className='lg:col-span-8 md:col-span-12 s:col-span-12 pt-5 px-6'>
-                        <h1 className='xl:w-2/3 xl:mx-auto text-center text-white lg:text-[55px] md:text-[40px] sm:text-[34px] s:text-[34px] leading-none	Brockmann'><span className='text-[#00FFFC]'>Transform</span> Your <span className='text-[#00FFFC]'>Business</span> with Advanced <span className='text-[#00FFFC]'>Warranty</span> <span className='text-[#00FFFC]'>  SaaS Solutions </span></h1>
+                        <h1 className='2xl:w-2/3 xl:w-full xl:mx-auto text-center text-white lg:text-[55px] md:text-[40px] sm:text-[34px] s:text-[34px] leading-none	Brockmann'><span className='text-[#00FFFC]'>Transform</span> Your <span className='text-[#00FFFC]'>Business</span> with Advanced <span className='text-[#00FFFC]'>Warranty</span> <span className='text-[#00FFFC]'>  SaaS Solutions </span></h1>
                         <p className='text-white text-xl text-center py-5 Gilroy'>Effortless Warranty Management Tailored for Growth</p>
                         <div className='lg:block md:block sm:hidden s:hidden'>
                             <div className='grid grid-cols-12 gap-3'>
@@ -684,6 +684,7 @@ function Home() {
 
                 </div >
             </div >
+            <div id='contactUs'></div>
             <div className='py-8 w-large mx-auto'>
                 <Contact />
             </div>

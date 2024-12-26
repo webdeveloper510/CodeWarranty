@@ -6,7 +6,7 @@ function Footer() {
         <div className='bg-headerBackground bg-cover bg-no-repeat pt-12'>
             <img src={Logo} className='mx-auto' alt="logo" />
             <p className='text-center text-[#95AAAD] Gilroy text-lg py-8'>Since 2015, CodeWarranty has been a leading web and mobile app development agency, <br /> specializing in creating custom solutions for businesses.</p>
-            <div className='grid lg:grid-cols-5 md:grid-cols-5 sm:grid-cols-2 s:grid-cols-2 gap-4 text-[#95AAAD] mt-5 px-8'>
+            {/* <div className='grid lg:grid-cols-5 md:grid-cols-5 sm:grid-cols-2 s:grid-cols-2 gap-4 text-[#95AAAD] mt-5 px-8'>
                 <div className=' col-span-1'>
                     <h1 className='Brockmann text-xl text-white'>Most Popular</h1>
                     <p className='Gilroy text-lg'>Smartphones </p>
@@ -71,7 +71,7 @@ function Footer() {
                     </div>
 
                 </div>
-            </div>
+            </div> */}
 
             <div className=' text-center py-3'>
                 <p className='text-center Brockmann text-white'>© 2024 CodeWarranty. All Rights Reserved. </p>
