@@ -12,7 +12,7 @@ function SingleBlog() {
                 <Header />
 
                 <div className='grid grid-cols-12 gap-4 mt-12'>
-                    <div className='col-span-3 pl-12'>
+                    <div className='col-span-3'>
                         <div className='flex justify-start'>
                             <img src={profile} alt='profile image' className='mr-3 w-[50px] h-[50px]' />
                             <div>
@@ -33,7 +33,7 @@ function SingleBlog() {
 
             <div className='w-large mx-auto'>
                 <div className='grid grid-cols-12 gap-4'>
-                    <div className='col-span-12 pl-12'>
+                    <div className='col-span-12'>
                         <p className='text-white mt-5 text-left mx-auto Gilroy text-base'>
                             Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
                             <br />
@@ -44,13 +44,10 @@ function SingleBlog() {
                     </div>
                 </div>
             </div>
-            <div id='contactUs'></div>
-            <div className='py-8 w-large mx-auto'>
+            <div className='py-8 w-large mx-auto' id='contactUs'>
                 <Contact />
             </div>
-            <div className='w-large mx-auto'>
-                <Footer />
-            </div>
+            <Footer />
         </div>
     )
 }
