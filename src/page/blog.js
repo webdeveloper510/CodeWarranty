@@ -15,9 +15,14 @@ import Arrow from '../assets/images/blog/arrow.png'
 import leftArrow from '../assets/images/blog/leftArrow.png'
 import { Link } from 'react-router-dom'
 import Contact from '../common/contact'
+import { Helmet } from 'react-helmet'
 function Blog() {
     return (
         <>
+            <Helmet>
+                <title>Best Warranty Management Software | Streamline Claims and Warranty Operations</title>
+                <meta name="description" content="Best Warranty Management Software | Streamline Claims and Warranty Operations" />
+            </Helmet>
             <div className='bg-[#002025] bg-headerBackground1 bg-contain bg-no-repeat'>
                 <div className='w-large mx-auto'>
                     <Header />
