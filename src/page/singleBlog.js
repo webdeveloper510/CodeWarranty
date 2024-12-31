@@ -10,9 +10,8 @@ function SingleBlog() {
     return (
         <>
             <Helmet>
-                <title>KW- Features of Warranty Software</title>
-                <meta name="description" content="Key Features to Look for in a Warranty
-Management Platform" />
+                <title>Features of Warranty Software</title>
+                <meta name="description" content="Key Features to Look for in a Warranty Management Platform" />
             </Helmet>
             <div className='bg-[#002025]'>
                 <div className='w-large mx-auto'>

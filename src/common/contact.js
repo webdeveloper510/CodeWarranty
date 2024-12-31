@@ -331,7 +331,6 @@ function Contact() {
                         </div>
                     )}
                     <div className='col-span-12 text-center py-10'>
-
                         <button type="submit" className='text-[#000] text-base bg-[#00FFFC] Brockmann rounded-lg px-12 py-4 uppercase'>Send Message</button>
                     </div>
                 </div>
