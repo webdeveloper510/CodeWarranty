@@ -55,7 +55,7 @@ function Blog() {
                         </div>
                     </div>
 
-                    <div className='grid lg:grid-cols-12 md:grid-cols-4 sm:grid-cols-4 s:grid-cols-4 gap-4 py-8'>
+                    {/* <div className='grid lg:grid-cols-12 md:grid-cols-4 sm:grid-cols-4 s:grid-cols-4 gap-4 py-8'>
                         <div className='col-span-4 lg:block md:hidden sm:hidden s:hidden'></div>
                         <div className='col-span-4'>
                             <div className='flex justify-around'>
@@ -69,7 +69,7 @@ function Blog() {
                             </div>
                         </div>
                         <div className='col-span-4'></div>
-                    </div>
+                    </div> */}
                 </div>
 
                 <div className='py-8 w-large mx-auto' id='contactUs'>
