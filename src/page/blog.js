@@ -2,23 +2,26 @@ import React from 'react'
 import Footer from '../common/footer'
 import Header from '../common/header'
 
-import BlogImage from '../assets/images/blog/blog (9).png'
+// import BlogImage from '../assets/images/blog/blog (9).png'
 import BlogImage1 from '../assets/images/blog/blog (8).png'
-import BlogImage2 from '../assets/images/blog/blog (7).png'
-import BlogImage3 from '../assets/images/blog/blog (6).png'
-import BlogImage4 from '../assets/images/blog/blog (5).png'
-import BlogImage5 from '../assets/images/blog/blog (4).png'
-import BlogImage6 from '../assets/images/blog/blog (3).png'
-import BlogImage7 from '../assets/images/blog/blog (2).png'
-import BlogImage8 from '../assets/images/blog/blog (1).png'
+// import BlogImage2 from '../assets/images/blog/blog (7).png'
+// import BlogImage3 from '../assets/images/blog/blog (6).png'
+// import BlogImage4 from '../assets/images/blog/blog (5).png'
+// import BlogImage5 from '../assets/images/blog/blog (4).png'
+// import BlogImage6 from '../assets/images/blog/blog (3).png'
+// import BlogImage7 from '../assets/images/blog/blog (2).png'
+// import BlogImage8 from '../assets/images/blog/blog (1).png'
 import Arrow from '../assets/images/blog/arrow.png'
-import leftArrow from '../assets/images/blog/leftArrow.png'
+// import leftArrow from '../assets/images/blog/leftArrow.png'
 import { Link } from 'react-router-dom'
 import Contact from '../common/contact'
 import { Helmet } from 'react-helmet'
 function Blog() {
+    const blogTitle = "key-features-to-look-for-in-a-warranty-management-platform";
+
     return (
-        <>
+        <><div class="w-10 h-10 border-4 border-gray-200 border-t-black rounded-full animate-spin"></div>
+
             <Helmet>
                 <title>Best Warranty Management Software | Streamline Claims and Warranty Operations</title>
                 <meta name="description" content="Best Warranty Management Software | Streamline Claims and Warranty Operations" />
@@ -37,7 +40,7 @@ function Blog() {
 
                     <div className='grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 s:grid-cols-1 gap-4 mt-8'>
                         <div className='bg-[#082B30] p-4 rounded-[14px]'>
-                            <Link to={'/blog/single-blog'}>
+                            <Link to={`/blog/${encodeURIComponent(blogTitle)}`}>
                                 <img src={BlogImage1} className='w-full' alt='Blog Post 1' />
                                 <p className='text-[#00FFFC] Brockmann mt-8'>Dec 30, 2024</p>
                                 <h2 className='text-[#fff] text-xl Brockmann mb-3 font-[500]'>Key Features to Look for in a Warranty Management Platform
@@ -47,7 +50,7 @@ function Blog() {
                                 </p>
 
                                 <div className='my-5'>
-                                    <Link to={'/blog/single-blog'}>
+                                    <Link to={`/blog/${encodeURIComponent(blogTitle)}`}>
                                         <img src={Arrow} alt='arrow' className='w-[60px] h-[60px]' />
                                     </Link>
                                 </div>
